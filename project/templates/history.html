@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main Page
+{% endblock %}
+
+{% block main %}
+    <table class = "table1 big">
+        <tr>
+            <th class = "td1">Book Name</th>
+            <th class = "td1">Book Author</th>
+            <th class = "td1">Total Pages</th>
+            <th class = "td1">Want to Reread?</th>
+        </tr>
+        <tbody>
+            {% for library in libraries %}
+            <tr>
+                <td class = "td1">{{ library[0] }}</td>
+                <td class = "td1">{{ library[1] }}</td>
+                <td class = "td1">{{ library[2] }}</td>
+                <td class = "td1"> <a href="/add">Reread</a> </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete A Book
+{% endblock %}
+
+{% block main %}
+    <form action="/delete" method="post">
+        <div class="form-group">
+            <select name="book" id="book" class="form-control" placeholder="Book">
+                <option disabled selected>Book</option>
+                {% for book in books %}
+                    <option value="{{ book }}">{{ book }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Delete</button>
+    </form>
+{% endblock %}

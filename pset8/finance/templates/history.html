@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class = "table1 big">
+        <tr>
+            <th class = "td1">Symbol</th>
+            <th class = "td1">Amount</th>
+            <th class = "td1">Price</th>
+            <th class = "td1">Time</th>
+        </tr>
+        <tbody>
+            {% for thing in history %}
+            <tr>
+                <th scope="row" class = "td1">{{ thing[0] }}</th>
+                <td class = "td1">{{ thing[1] }}</td>
+                <td class = "td1">{{ thing[2] }}</td>
+                <td class = "td1">{{ thing[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

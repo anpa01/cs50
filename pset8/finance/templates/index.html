@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class = "table1 big">
+        <tr>
+            <th class = "td1">Symbol</th>
+            <th class = "td1">Name</th>
+            <th class = "td1">Shares</th>
+            <th class = "td1">Price</th>
+            <th class = "td1">Total</th>
+        </tr>
+        <tbody>
+            {% for stock in stocks %}
+            <tr>
+                <th scope="row" class = "td1">{{ stock[0] }}</th>
+                <td class = "td1">{{ stock[1] }}</td>
+                <td class = "td1">{{ stock[2] }}</td>
+                <td class = "td1">{{ stock[3] }}</td>
+                <td class = "td1">{{ stock[4] }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+        <th scope="row" class = "td1">Cash</th>
+            <td class = "td1"></td>
+            <td class = "td1"></td>
+            <td class = "td1"></td>
+            <td class = "td1">{{ cash }}</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class = "td1">{{ total }}</td>
+          </tr>
+        </tbody>
+    </table>
+{% endblock %}

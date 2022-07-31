@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div class="form-group">
+            <input class="form-control" type="select" name="symbol" placeholder="Symbol">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="number" min ="1" name="amount" placeholder="Amount">
+        </div>
+        <button type="submit" class="btn btn-primary">Sell</button>
+    </form>
+{% endblock %}

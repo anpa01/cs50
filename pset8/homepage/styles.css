@@ -1,0 +1,38 @@
+.title
+{
+    text-align: center;
+}
+.body1
+{
+  background-image: url("StarWars.png");
+}
+.body2
+{
+    background-image: url("LukeAndAnakin.jpg");
+}
+.body3
+{
+    background-image: url("DarthMaul.jpg");
+}
+.body4
+{
+    background-image: url("RevengeOfTheSith.jpg");
+}
+.indent
+{
+    text-indent: 3em;
+}
+.table1
+{
+    border: 2px solid green;
+    border-collapse: collapse;
+}
+.td1
+{
+    border: 1px solid green;
+    padding: 5px;
+}
+.big
+{
+    font-size: 20px;
+}

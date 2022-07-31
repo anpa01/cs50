@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete A Book
+{% endblock %}
+
+{% block main %}
+    <form action="/max" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="max" placeholder="Maximum" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Create Max</button>
+    </form>
+{% endblock %}
