@@ -1,2 +1,2 @@
 # cs50
-CS50 Coursework
+My CS50 solutions from 2020
